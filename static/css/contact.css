@@ -1,0 +1,22 @@
+#contact-form {
+    padding: 8em 0em 3em 0em;
+}
+
+.contact-success {
+    height: 20em;
+}
+
+.contact-success-text {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    color: #218838;
+}
+
+.btn-send {
+    margin-top: 1em;
+}
+
+.captcha-error {
+    margin-top: 1em;
+}

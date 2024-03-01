@@ -1,0 +1,45 @@
+(function($) {
+  "use strict"; // Start of use strict
+
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 56)
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
+  });
+
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+})(jQuery); // End of use strict
+
+$(function() {
+  var header = $("#mainNav");
+  var contactButton = $("#contactButton")
+  //var overlayHeight = $(".overlay").height() - 300;
+
+  $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+      if (scroll >= 20) {
+          header.addClass("bg-dark float-nav");
+          contactButton.removeClass("btn-primary")
+          contactButton.addClass("btn-outline-primary")
+          $('#siteLogo').width(150);
+      } else {
+          header.removeClass("bg-dark float-nav");
+          contactButton.removeClass("btn-outline-primary")
+          contactButton.addClass("btn-primary")
+          $('#siteLogo').width(180);
+      }
+  });
+
+});

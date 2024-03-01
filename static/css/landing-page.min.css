@@ -1,0 +1,111 @@
+/*!
+ * Start Bootstrap - Landing Page v5.0.7 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+body {
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700
+}
+
+header.masthead {
+    position: relative;
+    background: url(/static/images/cover-min.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: 0% 62%;
+}
+
+header.masthead .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header.masthead h1 {
+    font-size: 2rem
+}
+
+@media (min-width:768px) {
+    header.masthead {
+        padding-top: 10rem;
+        padding-bottom: 20rem
+    }
+
+    header.masthead h1 {
+        font-size: 3rem
+    }
+}
+
+.showcase .showcase-img {
+    min-height: 20rem;
+    background-size: cover
+}
+
+.features-icons {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+}
+
+.features-icons .features-icons-item {
+    max-width: 20rem
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+    height: 7rem
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem
+}
+
+.testimonials {
+    padding-top: 7rem;
+    padding-bottom: 7rem
+}
+
+.testimonials .testimonial-item {
+    max-width: 18rem
+}
+
+.testimonials .testimonial-item img {
+    max-width: 12rem;
+    box-shadow: 0 5px 5px 0 #adb5bd
+}
+
+.call-to-action {
+    position: relative;
+    background: url(/static/images/elpis-cover2.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center 60%;
+    padding: 200px 0;
+}
+
+.call-to-action .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .3
+}
+
+footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem
+}
